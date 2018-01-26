@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -60,5 +61,15 @@ public class TouchPullView extends View {
         float x = getWidth() >> 1;
         float y = getHeight() >> 1;
         canvas.drawCircle(x, y, mCircleRadius, mCirclePaint);
+    }
+
+    /**
+     * 设置进度
+     *
+     * @param progress 进度
+     */
+    public void setProgress(float progress) {
+        Log.e("TAG", "P" + progress);
+
     }
 }
